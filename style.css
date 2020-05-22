@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.col {
+    display: flex;
+    width: 25%;
+    height: 200px;
+    background: red;
+}
+.col:nth-child(1) {
+    background: red;
+}
+
+.col:nth-child(2) {
+    background: green;
+}
+
+.col:nth-child(3) {
+    background: blue;
+}
+
+.col:nth-child(4) {
+    background: yellow;
+}
+
+
+@media screen and (max-width: 500px) {
+    .col {
+        width: 50%;
+    }
+}
